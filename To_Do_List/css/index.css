@@ -122,9 +122,9 @@ body
     flex-direction: column;
     margin-top: 20px;
 }
-.todo_wrapper .list_wrapper .list-items img
+.list_wrapper .main_img
 {
-    animation: updown 5s ease-in-out infinite;
+    animation: updown 4s ease-in-out infinite;
     filter: drop-shadow(0px 0px 10px #8ecae63c);
 }
 @keyframes updown {
