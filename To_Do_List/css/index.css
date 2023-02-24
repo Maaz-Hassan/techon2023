@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+    cursor: none !important;
+}
+:root
+{
+    --ex_light_blue:#8ecae6;
+    --light_blue:#219ebc;
+    --dark_blue:#023047;
+    --yello:#ffb703;
+    --orange:#fb8500;
+}
+body
+{
+    background-color: var(--dark_blue);
+}
+.todo_wrapper .account p
+{
+    color: var(--yello);
+    font-size: 20px;
+    margin: 0px 10px;
+}
+.todo_wrapper .account i
+{
+    color: var(--yello);
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.todo_wrapper .account form input
+{
+    border-radius: 0 !important;
+    background-color: transparent;
+    border: 2px solid var(--yello);
+    color: #fff;
+}
+.todo_wrapper .account form input:focus
+{
+    outline: none !important;
+}
+.todo_wrapper .account form label
+{
+    color: var(--yello);
+}
+.todo_wrapper .account form button
+{
+    border-radius: 0 !important;
+}
+.todo_wrapper .todo form input
+{
+    width:400px;
+    padding: 10px;
+    margin: 0 !important;
+    border-radius: 0  !important;
+}
+.todo_wrapper .todo form button
+{
+    background-color: var(--yello);
+    margin: 0 !important;
+    border-radius: 0  !important;
+    outline: none !important;
+}
+.todo_wrapper .todo form button i 
+{
+    font-weight: 800 !important;
+    font-size: 20px;
+}
+.todo_wrapper .list_wrapper
+{
+    width: 500px;
+    /* background-color: #fff; */
+    /* height: 50px; */
+    padding: 10px;
+    margin-top: 30px;
+}
+.todo_wrapper .list_wrapper .list_input form
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo_wrapper .list_wrapper .list_input form input
+{
+    width: 85%;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid var(--yello);
+    color: #fff;
+}
+.todo_wrapper .list_wrapper .list_input form input::placeholder
+{
+    color: var(--yello);
+}
+.todo_wrapper .list_wrapper .list_input form button
+{
+    width: 15%;
+    height: 50px;
+    background-color: var(--yello);
+    border-radius: 0 !important;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_wrapper .list_wrapper .list_input form button i
+{
+    font-size: 20px;
+}
+.todo_wrapper .list_wrapper .list_items
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.todo_wrapper .list_wrapper .list-items img
+{
+    animation: updown 5s ease-in-out infinite;
+    filter: drop-shadow(0px 0px 10px #8ecae63c);
+}
+@keyframes updown {
+    0%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(25px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+.todo_wrapper .list_wrapper .list_items .list_item
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px #8ecae683;
+    border-radius: 5px;
+}
+.todo_wrapper .list_wrapper .list_items .list_item form
+{
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo_wrapper .list_wrapper .list_items .list_item form input
+{
+    width: 20px;
+    height: 20px;
+    /* margin-bottom: 12px !important; */
+}
+.todo_wrapper .list_wrapper .list_items .list_item form label h3
+{
+    margin-left: 10px;
+    margin-top: 7px;
+    color: var(--yello);
+}
+.todo_wrapper .list_wrapper .list_items .list_item form p
+{
+    color: #fff;
+}
+.todo_wrapper .list_wrapper .list_items .list_item form button
+{
+    color: var(--yello);
+    font-size: 18px;
+    font-weight: 700;
+}
