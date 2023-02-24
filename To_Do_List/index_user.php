@@ -59,24 +59,20 @@ if (isset($_POST['btnregister'])) {
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">To Do List</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Create Task</a>
+                        <a class="nav-link active" aria-current="page" href="index_user.php">Create Task</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">To-do List</a>
+                        <a class="nav-link" href="to_do_list.php">To-do List</a>
                     </li>
 
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <?php if (isset($_SESSION['admin'])) {
@@ -90,92 +86,6 @@ if (isset($_POST['btnregister'])) {
                         <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                     </ul>
                 </li>
-                <!-- <div class="row account">
-                    <div class="col-12 d-flex align-items-center justify-content-end">
-                        <p style="text-transform: capitalize;"></p>
-                        <?php
-                        if (!isset($_SESSION['admin'])) {
-                            echo "
-                            <button type='button' class='btn' data-bs-toggle='modal' data-bs-target='#exampleModal'><i
-                            class='bi bi-person-lines-fill'></i></button>
-                    <div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel'
-                        aria-hidden='true'>
-                        <div class='modal-dialog'>
-                            <div class='modal-content' style='background-color: #023047;'>
-                                <div class='modal-header'>
-                                    <h1 class='modal-title fs-5' style='color: #ffb703;' id='exampleModalLabel'>Login
-                                    </h1>
-                                    <button type='button' class='btn-close' style='background-color: #ffb703;'
-                                        data-bs-dismiss='modal' aria-label='Close'></button>
-                                </div>
-                                <div class='modal-body'>
-                                    <form method='POST' autocomplete='off'>
-                                        <div class='mb-3'>
-                                            <label for='exampleInputEmail1' class='form-label'>Email address</label>
-                                            <input type='email' class='form-control' id='exampleInputEmail1'
-                                                aria-describedby='emailHelp' required name='logemail'>
-                                        </div>
-                                        <div class='mb-3'>
-                                            <label for='exampleInputPassword1' class='form-label'>Password</label>
-                                            <input type='password' class='form-control' id='exampleInputPassword1'
-                                                required name='logpass'>
-                                        </div>
-                                        <button type='submit' class='btn w-100'
-                                            style='background-color: #ffb703;' name='btnlogin'>Login</button>
-                                        <div class='form-text my-2'>Don't Have An Account? <span><button
-                                                    style='color: #ffb703;' type='button' class='btn'
-                                                    data-bs-toggle='modal' data-bs-target='#staticBackdrop'>Sign
-                                                    Up</button></span></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='modal fade' id='staticBackdrop' data-bs-backdrop='static' data-bs-keyboard='false'
-                        tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>
-                        <div class='modal-dialog'>
-                            <div class='modal-content' style='background-color: #023047;'>
-                                <div class='modal-header'>
-                                    <h1 class='modal-title fs-5' id='staticBackdropLabel' style='color: #ffb703;'>Sign
-                                        Up</h1>
-                                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'
-                                        style='background-color: #ffb703;'></button>
-                                </div>
-                                <div class='modal-body'>
-                                    <form method='POST' autocomplete='off'>
-                                        <div class='mb-3'>
-                                            <label for='exampleInputEmail1' class='form-label'>Full Name</label>
-                                            <input type='text' class='form-control' id='exampleInputEmail1'
-                                                aria-describedby='emailHelp' required name='regusername'>
-                                        </div>
-                                        <div class='mb-3'>
-                                            <label for='exampleInputEmail2' class='form-label'>Email address</label>
-                                            <input type='email' class='form-control' name='regemail' id='exampleInputEmail2'
-                                                aria-describedby='emailHelp' required>
-                                        </div>
-                                        <div class='mb-3'>
-                                            <label for='exampleInputPassword1' class='form-label'>Password</label>
-                                            <input type='password' class='form-control' name='regpass' id='exampleInputPassword1'
-                                                required>
-                                        </div>
-                                        <button type='submit' class='btn w-100'
-                                            style='background-color: #ffb703;' name='btnregister'>Register</button>
-                                        <div class='form-text my-2'>Have An Account? <span><button
-                                                    style='color: #ffb703;' type='button' class='btn'
-                                                    data-bs-toggle='modal'
-                                                    data-bs-target='#exampleModal'>Login</button></span></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                            ";
-                        } else {
-                            echo "<a href='logout.php'><i class='bi bi-box-arrow-right'></i></a>";
-                        }
-                        ?>
-                    </div>
-                </div> -->
             </div>
         </div>
     </nav>
