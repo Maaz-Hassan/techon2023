@@ -1,7 +1,7 @@
 <?php
 include("../To_Do_List/connection.php");
 session_start();
-$usernum = mysqli_query($connect, "SELECT * FROM tbl_todo_admin");
+$usernum = mysqli_query($connect, "SELECT * FROM task_list");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,10 +63,13 @@ $usernum = mysqli_query($connect, "SELECT * FROM tbl_todo_admin");
                   ?>
 
                     <tr>
-                      <td><?php echo $row['admin_id'] ?></td>
-                      <td><?php echo $row['admin_fullname'] ?></td>
-                      <td><?php echo $row['admin_email'] ?></td>
-                      <td><?php echo $row['admin_password'] ?></td>
+                      <td><?php echo $row['task_id'] ?></td>
+                      <td><?php echo $row['task_name'] ?></td>
+                      <td><?php echo $row['group_id'] ?></td>
+                      <td><?php echo $row['due_date'] ?></td>
+                      <td><?php echo $row['due_time'] ?></td>
+                      <td><?php echo $row['description'] ?></td>
+                      <td><a href="../To_Do_List/<?php echo $row['attachment'] ?>" target="_blank" style="color: #ffb703; font-size: 20px;"><i class="mdi mdi-attachment"></i></a></td>
                     </tr>
 
                   <?php
